@@ -1,5 +1,6 @@
 # File Watchdog
-A defensive programming script that allows you to track changes in multiple folders simultaneously.
+### A defensive programming script that allows you to track changes in multiple folders simultaneously.
+
 <img src="watchdog.jpg">
 
 #### The script is written in Python and uses the Watchdog module and the Multiprocessing package:
