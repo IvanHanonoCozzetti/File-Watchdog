@@ -12,6 +12,7 @@ folder1 = "C:/Users/Ivan/Desktop"
 folder2 = "C:/Users/Ivan/Documents"
 
 
+# Activity display
 def monitor_folder(folder):
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s - %(message)s',
@@ -30,6 +31,7 @@ def monitor_folder(folder):
     observer.join()
 
 
+# Start running the monitor in each folder
 if __name__ == "__main__":
     m = multiprocessing.Process(target=monitor_folder, args=(folder,))
     m1 = multiprocessing.Process(target=monitor_folder, args=(folder1,))
