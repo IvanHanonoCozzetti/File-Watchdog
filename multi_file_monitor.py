@@ -31,7 +31,7 @@ def monitor_folder(folder):
     observer.join()
 
 
-# Start running the monitor in each folder
+# Start running the monitor in each folder (Multiprocessing)
 if __name__ == "__main__":
     m = multiprocessing.Process(target=monitor_folder, args=(folder,))
     m1 = multiprocessing.Process(target=monitor_folder, args=(folder1,))
